@@ -7,7 +7,6 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         width, height = pyautogui.size()
         MainWindow.setGeometry((width - 800)/2,(height - 592)/2,800,592)
-        MainWindow.resize(800, 592)
         MainWindow.setStyleSheet("")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -104,7 +103,7 @@ class Ui_MainWindow(object):
         self.label_7 = QtWidgets.QLabel(self.centralwidget)
         self.label_7.setGeometry(QtCore.QRect(720, 14, 21, 21))
         self.label_7.setText("")
-        self.label_7.setPixmap(QtGui.QPixmap("images/form/—Pngtree—vector search icon_3994986.png"))
+        self.label_7.setPixmap(QtGui.QPixmap("images/—Pngtree—vector search icon_3994986.png"))
         self.label_7.setObjectName("label_7")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -119,7 +118,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", " "))
+        MainWindow.setWindowTitle(_translate("MainWindow", "27-6 sinh nhật Nam :)"))
         self.checkStatePrev()
         self.checkStateNext()
         self.checkStateClicked()
@@ -788,7 +787,7 @@ class Ui_MainWindow(object):
             self.listFrame[i].setObjectName("framel0")
             self.listlabel1[i].setGeometry(QtCore.QRect(20, 0, 55, 51))
             self.listlabel1[i].setText("")
-            self.listlabel1[i].setPixmap(QtGui.QPixmap("images/form/folder - Copy.png"))
+            self.listlabel1[i].setPixmap(QtGui.QPixmap("images/folder - Copy.png"))
             self.listlabel1[i].setObjectName("label")
             self.listlabel2[i].setGeometry(QtCore.QRect(80, 10, 101, 31))
             self.listlabel2[i].setObjectName("label_2")

@@ -1,2 +1,2 @@
-from UI import UI
-UI().loop()
+import UI
+UI.UI().loop()
