@@ -9,7 +9,7 @@ class Ui_MainWindow(object):
         MainWindow.setStyleSheet("QMainWindow{\n"
                                  "    background:rgb(76, 76, 76);\n"
                                  "}")
-        MainWindow.setWindowIcon(QtGui.QIcon('images/img.png'))
+        MainWindow.setWindowIcon(QtGui.QIcon('images/img.jpg'))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.frame = QtWidgets.QFrame(self.centralwidget)

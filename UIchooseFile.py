@@ -8,6 +8,7 @@ class Ui_MainWindow(object):
         width, height = pyautogui.size()
         MainWindow.setGeometry((width - 800)/2,(height - 592)/2,800,592)
         MainWindow.setStyleSheet("")
+        MainWindow.setWindowIcon(QtGui.QIcon('images/img.jpg'))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.frame = QtWidgets.QFrame(self.centralwidget)

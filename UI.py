@@ -26,12 +26,16 @@ class UI:
     def newFolder(self,e):
         directory = str(QtWidgets.QFileDialog.getExistingDirectory())
         if directory != "":
-            processFile.saveNewProject(directory)
-            s = directory + "/images.txt"
-            f = open(s, 'w')
-            f.write("Sailormiu")
-            f.close()
-            self.__UIMain(directory)
+            project = processFile.getAllProject()
+            if processFile.checkProject(directory,project) :
+                processFile.saveNewProject(directory)
+                s = directory + "/images.txt"
+                f = open(s, 'w')
+                f.write("Sailormiu")
+                f.close()
+                self.__UIMain(directory)
+            else:
+                self.MainWindow.setWindowTitle("Folder đã lưu project khác :) chọn Folder khác đi bạn")
     def __UIMain(self,URL):
         self.ui = UIMain.Ui_MainWindow()
         self.ui.setupUi(self.MainWindow,URL)

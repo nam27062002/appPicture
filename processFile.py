@@ -20,6 +20,11 @@ def getAllProject():
     L.reverse()
     f.close()
     return L
+def checkProject(a,b):
+    for i in b:
+        if a == i[1]:
+            return False
+    return True
 def getAllUrl(url):
     L = []
     url += "/images.txt"

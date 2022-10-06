@@ -6,7 +6,7 @@ import processFile
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow, url):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1200, 900)
+        MainWindow.setWindowIcon(QtGui.QIcon('images/img.jpg'))
         width, height = pyautogui.size()
         MainWindow.setGeometry((width - 1200) / 2, (height - 900) / 2, 1200, 900)
         MainWindow.setStyleSheet("QMainWindow{\n"
@@ -454,6 +454,7 @@ class Ui_MainWindow(object):
         if s == "png":
             event.accept()
         else:
+            print(x)
             event.ignore()
 
     def dropEvent(self, event):
